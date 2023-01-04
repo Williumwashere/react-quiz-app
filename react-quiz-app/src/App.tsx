@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './index.css';
+import "./index.css";
 
 export default function App() {
   const questions = [
@@ -35,7 +35,7 @@ export default function App() {
       answerOptions: [
         { answerText: "1", isCorrect: false },
         { answerText: "4", isCorrect: false },
-        { answerText: "6", isCorrect: false },
+        { answerText: "8", isCorrect: false },
         { answerText: "7", isCorrect: true },
       ],
     },
@@ -43,7 +43,7 @@ export default function App() {
 
   return (
     <div className="app">
-      {/* HINT: replace "false" with logic to display the 
+      {/* HINT: replace "false" with logic to display the
       score when the user has answered all the questions */}
       {false ? (
         <div className="score-section">
