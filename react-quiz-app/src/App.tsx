@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import "./index.css";
 
 export default function App() {
+  const [question, setQuestion] = useState(1);
+  const handleQuestion = () => {
+    const nextQuestion = question + 1;
+    setQuestion(nextQuestion);
+  };
   const questions = [
     {
       questionText: "What is the capital of France?",
@@ -60,10 +65,7 @@ export default function App() {
             </div>
           </div>
           <div className="answer-section">
-            <button>Answer 1</button>
-            <button>Answer 2</button>
-            <button>Answer 3</button>
-            <button>Answer 4</button>
+            {}
           </div>
         </>
       )}
